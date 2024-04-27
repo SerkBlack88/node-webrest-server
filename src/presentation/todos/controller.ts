@@ -90,6 +90,7 @@ export class TodosController {
         if ( !todo ) return res.status(404).json({ error: `TODO with id ${ id } not found` });
         
         // const { text, completedAt } = req.body;
+        //prueba
 
         const updatedTodo = await prisma.todo.update({
             where: { id },
